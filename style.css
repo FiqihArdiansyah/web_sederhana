@@ -1,261 +1,323 @@
-* {
-  text-decoration: none;
-  margin: 0px;
-  padding: 0px;
-}
-
+html,
 body {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.wrapper {
-  width: 1100px;
-  margin: auto;
-  position: relative;
-}
-
-.logo a {
-  font-size: 50px;
-  font-weight: 800;
-  float: left;
-  font-family: Times;
-  color: #06283d;
-}
-
-.menu {
-  float: right;
-}
-
-nav {
-  width: 100%;
-  margin: auto;
-  display: flex; /* bisa membuat seperti kolom-kolom dimenu menunya*/
-  line-height: 80px; /*posisi dari bagian atas dan bawah biar bisa rata (seimbang di tengah dari bagian div */
-  position: sticky; /* tetap di atas meskipun di scroll*/
-  position: -webkit-sticky;
-  top: 0;
-  background: #ffffff;
-  z-index: 1;
-  border-bottom: 1px solid black;
-}
-
-nav ul {
-  list-style: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
-nav ul li {
-  float: left;
+.section-navbar {
+  background-color: rgb(0, 102, 255);
 }
 
-nav ul li a {
-  color: black;
-  font-weight: bold;
-  text-align: center;
-  padding: 0px 16px 0px 16px;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-  color: blue;
-}
-
-section {
-  margin: auto;
+.navbar-nav {
+  padding: 1rem 5rem;
   display: flex;
-  margin-bottom: 50px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.kolom {
-  margin-top: 50px;
-  margin-bottom: 50px;
+.ul-tab-1 {
+  list-style: none;
 }
 
-.kolom .deskripsi {
-  font-size: 20px;
-  font-weight: bold;
-  font-family: 'comic sans ms';
-  color: #06283d;
-}
-
-h2 {
-  font-family: 'comic sans ms';
-  font-weight: 800;
-  font-size: 45px;
-  margin-bottom: 20px;
-  color: #06283d;
-  width: 100%;
-  line-height: 50px;
-}
-a.tbl-biru {
-  background: #256d85;
-  border-radius: 20px;
-  margin-top: 20px;
-  padding: 15px 20px 15px 20px;
-  color: #ffffff;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-a.tbl-biru:hover {
-  background: red;
+.ul-tab-1 li a {
+  color: white;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.ul-tab-2 {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.ul-tab-2 li a {
+  margin-right: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.ul-tab-2 li a:hover {
+  border-bottom: 2px solid;
   color: black;
 }
 
-a.tbl-pink {
-  background: red;
-  border-radius: 20px;
-  margin-top: 20px;
-  padding: 15px 20px 15px 20px;
-  color: #ffffff;
-  cursor: pointer;
+.section-jumbotron {
+  background-image: linear-gradient(45deg, #078cda, #08f7eb);
+}
+
+.wrapper-jumbotron {
+  display: flex;
+  padding: 3rem 5rem;
+  align-items: center;
+}
+
+.left {
+  padding: 2rem 3rem 2rem 0;
+}
+
+.right {
+  padding: 2rem 0 2rem 3rem;
+}
+
+.left h3 {
+  color: white;
+  font-size: 2rem;
+  line-height: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.left p {
+  color: white;
+  width: 60%;
+  font-size: 1.1rem;
+}
+
+.left button {
+  background-color: blue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.left button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.section-layanan {
+  background-color: #faf8f8;
+}
+
+.wrapper-card {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.section-layanan h3 {
+  color: #f201fa;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px #f201fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 1rem;
+}
+
+.img {
+  width: 30%;
+}
+
+.img img {
+  width: 100%;
+}
+
+.card h5 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.card p {
+  margin-top: 0.4rem;
+  text-align: center;
+}
+
+.harga div {
   font-weight: bold;
 }
 
-a.tbl-pink:hover {
-  background: #06283d;
-  text-decoration: none;
+.harga p {
+  margin-bottom: 0.4rem;
 }
 
-p {
-  margin: 10px 0px 10px 0px;
-  padding: 10px 0px 10px 0px;
+.harga span {
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
 }
 
-.tengah {
-  text-align: center;
-  width: 100%;
+.card:hover {
+  animation-name: animate;
+  animation-duration: 0.5s;
 }
 
-.tutor-list {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.kartu-tutor {
-  width: 20%;
-  margin: 0 auto;
-}
-
-.kartu-tutor img {
-  width: 80%;
-  border-radius: 50%;
-}
-
-.kartu-tutor p {
-  font-family: 'comic sans ms';
-  font-weight: 800;
-  font-size: 25px;
-  text-align: center;
-  color: #256d85;
-}
-
-.patner-list {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.kartu-patner {
-  width: 20%;
-  margin: 0 auto;
-}
-
-.kartu-patner img {
-  width: 150px;
-  border-radius: 50%;
-}
-
-#kontak {
-  background: #dedede;
-  padding: 50px 0px 50px 0px;
-}
-
-.footer {
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  margin: auto;
-}
-
-.footer-section {
-  width: 20%;
-  margin: 0 auto;
-}
-
-h3 {
-  font-family: 'comic sans ms';
-  font-weight: 800;
-  font-size: 30px;
-  margin-bottom: 20px;
-  color: #256d85;
-  width: 100%;
-  line-height: 50px;
-}
-
-#copyright {
-  text-align: center;
-  width: 100%;
-  padding: 50px 0px 50px 0px;
-  margin-top: 50px;
-}
-
-@media screen and (max-width: 911.98px) {
-  .wrapper {
-    width: 90%;
+@keyframes animate {
+  0% {
+    transform: scale(1);
+    transition: 1s;
   }
+  100% {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+}
 
-  .logo a {
-    display: block;
+.sub-footer1 {
+  background-color: #f201fa;
+  display: flex;
+  padding: 2rem 4rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.sub-footer1 div {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 3rem 0 0;
+  line-height: 5rem;
+}
+
+.sub-footer1 button {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: medium;
+  border: navy;
+  border-radius: 5px;
+  background-color: blue;
+  cursor: pointer;
+  padding: 1rem 2rem;
+}
+
+.sub-footer1 button:hover {
+  background-color: rgb(0, 255, 200);
+}
+
+.sub-footer2 {
+  display: flex;
+  background-color: #000;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+}
+
+.hubungi-kami div {
+  text-align: center;
+  color: #fff;
+}
+
+.hubungi-kami ul {
+  padding-left: 2rem;
+}
+
+.hubungi-kami ul li {
+  list-style: none;
+  text-align: start;
+  color: #fff;
+}
+
+.layanan div {
+  text-align: center;
+  color: #fff;
+}
+
+.layanan ul {
+  padding-left: 2rem;
+}
+
+.layanan ul li {
+  list-style: none;
+  text-align: start;
+  color: #fff;
+}
+
+.service-laptop div {
+  text-align: center;
+  color: #fff;
+}
+
+.service-laptop ul {
+  padding-left: 2rem;
+}
+
+.service-laptop ul li {
+  list-style: none;
+  text-align: start;
+  color: #fff;
+}
+
+.kenapa-pilih div {
+  text-align: center;
+  color: #fff;
+}
+
+.kenapa-pilih ul {
+  padding-left: 2rem;
+}
+
+.kenapa-pilih ul li {
+  list-style: none;
+  text-align: start;
+  color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  .wrapper-jumbotron {
+    flex-direction: column-reverse;
+  }
+  .ul-tab-2 {
+    display: none;
+  }
+  .right {
+    padding: 2rem 0 2rem 0;
+  }
+  .right img {
     width: 100%;
+  }
+  .left {
+    padding: 2rem 0 2rem 0;
     text-align: center;
   }
-
-  nav .menu {
+  .left p {
     width: 100%;
-    margin: 0;
+  }
+  .left h3 {
+    font-size: 2rem;
   }
 
-  nav .menu ul {
-    text-align: center;
-    margin: auto;
-    line-height: 60px;
+  .sub-footer1 div {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-right: 5rem;
   }
-
-  nav .menu ul li {
-    display: inline-block;
-    float: none;
+  .sub-footer1 button {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: medium;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    cursor: pointer;
+    padding: 10px 10px;
   }
-
-  section {
-    display: block;
+  .sub-footer2 {
+    display: flex;
+    flex-direction: column;
   }
-
-  section img {
-    display: block;
-    width: 100%;
-    height: auto;
+  .hubungi-kami div {
+    text-align: start;
   }
-
-  .kartu-tutor {
-    width: 50%;
+  .layanan div {
+    text-align: start;
   }
-
-  .kartu-patner {
-    width: 50%;
+  .service-laptop div {
+    text-align: start;
   }
-
-  .footer-section {
-    width: 50%;
+  .kenapa-pilih div {
+    text-align: start;
+  }
+  .wrapper-card {
+    flex-direction: column;
   }
 }
